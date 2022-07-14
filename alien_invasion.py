@@ -1,6 +1,8 @@
 from ast import While
+from platform import python_branch
 import sys
 from tkinter import W
+from turtle import screensize
 
 import pygame
 
@@ -15,9 +17,16 @@ class AlienInvasion:
         self.screen = pygame.display.set_mode((1000,600))
         pygame.display.set_caption("ငါလိုးပိုင်ဂိမ်းဟ")
 
+        #setbackground color
+        self.bg_color = (172, 125, 136)
+
     def run_game(self):
         """Start the main loop for game"""
         while True:
+
+            #background color
+            self.screen.fill((self.bg_color))
+
             #Watch for keyboard and mouse events
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
@@ -29,6 +38,6 @@ class AlienInvasion:
 if __name__ == "__main__":
     #Make a game instance , run the game
     ai = AlienInvasion()
-    
+
     ai.run_game()
 
