@@ -12,4 +12,4 @@ class Settings:
         self.bg_color = (148, 180, 159)
         self.caption =("ငါလိုးပိုင်ဂိမ်းဟ")
         self.icon = pygame.image.load("images/icon.png")
-        
+        self.ship_speed = 1.5
