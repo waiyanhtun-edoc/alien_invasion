@@ -1,0 +1,3 @@
+#ship 
+ I don't no what is ship.py file
+    self.screen = ai_game.screen
