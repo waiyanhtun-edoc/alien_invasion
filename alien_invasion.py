@@ -5,7 +5,7 @@ from tkinter.tix import Tree
 from settings import Settings
 from ship import Ship
 import pygame
-from bullet import Bullet
+from bullets import Bullet
 
 class AlienInvasion:
     """Over all class to mangage assets and behavior."""
